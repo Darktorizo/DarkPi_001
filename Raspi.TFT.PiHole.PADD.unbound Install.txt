@@ -424,6 +424,11 @@ sudo reboot
 This will reset your Pi-hole back to the default list
 
 
+PiHole Telemetry in console
+
+pihole -t
+
+
 ----------------------------------
 Updates (Every 6 Months Or So)
 ----------------------------------
