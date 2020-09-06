@@ -33,6 +33,10 @@ Also, if I used your list and forgot to mention you, please contact me and I wil
 ---
 
 ##### Credits:
+
+- The Raspberry Pi team @ https://www.raspberrypi.org/
+- The PiHole Team @ https://pi-hole.net/
+- The Unbound Team @ https://nlnetlabs.nl/projects/unbound/about/
 - StevenBlack
 - MalwareDomains
 - Cameleon
