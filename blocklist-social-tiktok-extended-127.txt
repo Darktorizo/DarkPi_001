@@ -1,8 +1,10 @@
 # Blocklist for TikTok (And Related Doamins) #
 # Version: 1.0
 # Last Modified: 09.06.2020 @ 10:00am EST
-# Domains Listed: 993 (2847 actual)
+# Domains Listed: 2836 (2847 actual)
 # Homepage: https://raw.githubusercontent.com/Darktorizo/DarkPi_001/master/blocklist-social-tiktok-extended-127.txt
+# Use this list to totally block access to tiktok on your network.
+# Note: this list will block access to / break other Bytedance products and apps.
 # The list is released without any warranty to the end users.
 # License: GPLv3
 #------------------------------------------------------------------------------------------------------------------#
