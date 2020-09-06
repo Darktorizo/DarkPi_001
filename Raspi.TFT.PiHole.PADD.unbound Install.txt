@@ -1,0 +1,458 @@
+----------------------------------
+Raspberry Pi 3B Install
+----------------------------------
+
+* Download the OS/image
+
+https://www.raspberrypi.org/downloads/raspberry-pi-os/
+
+Then Choose 1 of 3
+
+Full+
+https://downloads.raspberrypi.org/raspios_full_armhf_latest.torrent
+https://downloads.raspberrypi.org/raspios_full_armhf_latest
+
+Full
+
+https://downloads.raspberrypi.org/raspios_armhf_latest.torrent
+https://downloads.raspberrypi.org/raspios_armhf_latest
+
+Lite
+https://downloads.raspberrypi.org/raspios_lite_armhf_latest.torrent
+https://downloads.raspberrypi.org/raspios_lite_armhf_latest
+
+----------------------------------
+Raspberry Pi Desktop
+https://downloads.raspberrypi.org/rpd_x86_latest.torrent
+https://downloads.raspberrypi.org/rpd_x86_latest
+----------------------------------
+
+For This Install we will be using the Lite Version
+
+* Install OS/Image with balenaEtcher
+
+    Download the Windows installer from balena.io
+https://github.com/balena-io/etcher/releases/download/v1.5.106/balenaEtcher-Portable-1.5.106.exe
+
+    Run balenaEtcher and select the unzipped Raspberry Pi OS image file
+
+    Select the SD card drive
+
+    Finally, click Burn to write the Raspberry Pi OS image to the SD card
+
+You'll see a progress bar. Once complete, the utility will automatically unmount the SD card so it's safe to remove it from your computer.
+
+But before you do re-mount the SD Card and...
+
+* Enable SSH on Raspberry Pi in Headless Mode
+
+Many users run these devices as a web or media server and configure them via SSH. If you use your Raspberry Pi without a monitor and keyboard, then the only way to enable SSH in headless mode is to use a blank boot file.
+
+On Windows, right-click anywhere in the boot volume’s white space and select New > Text Document. Name it ssh and Delete the .txt extension before you hit Enter.
+
+Every time you turn on the Pi board, the device looks for the ssh file. When the device finds the file, then SSH is enabled automatically. If you correctly created an empty ssh file without an extension, you can now SSH into your device.
+
+* Install/First Run
+
+Insert the SD card into your Raspberry Pi 3 and connect the ethernet cable if necessary. Now power up the Raspberry Pi 3 by inserting the micro USB cable.
+
+* Locate Device on Network/IP Address
+
+Scan Network for IP Address
+
+Angry IP Scanner
+https://angryip.org/download/#windows
+
+* Use PuTTy in Windows to Connect to Raspberry Pi
+
+https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.74-installer.msi
+https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.74-installer.msi
+
+Start the tool and enter the IP address of your device. Make sure SSH is selected, and the port set to 22.
+
+Once connected to your Rasberry Pi using the default login
+
+User: pi
+PW: raspberry
+
+Enter sudo su to gain Superuser (Administrator) Status
+
+Change The Admin password. At the command line enter the following command to change the password for the Admin Webpage:
+
+sudo pihole -a -p
+
+then 
+
+sudo raspi-config
+
+Change default password
+Change Hostname (If desired)
+Set localization/time zone
+Advanced-> Expand Filesystem
+Update
+
+Finish
+
+sudo reboot
+
+*** Note *** Updating Rasberry Pi
+
+Start by updating the repository package list:
+
+sudo apt update
+
+Before starting the upgrade, you can check the available space on your device. Run the following command:
+
+df -h
+
+The upgrade tool tells you how much space it needs to complete the process. To upgrade all packages on your Raspberry Pi, enter this command:
+
+sudo apt full-upgrade
+
+Note: The apt full-upgrade and apt-get distro-update command perform the same function. apt full-upgrade does not update to a new major release of Raspbian. This command keeps your current release up-to-date.
+
+If you want to free up some space on your Raspberry Pi, run the clean command to remove the downloaded .deb packages:
+
+sudo apt clean
+
+To reboot your device, enter:
+
+sudo reboot
+
+----------------------------------
+End Raspberry Pi 3B Installation/Configuration
+----------------------------------
+
+----------------------------------
+PiHole Install
+----------------------------------
+
+https://pi-hole.net/
+
+* Manually download the installer and run
+
+wget -O basic-install.sh https://install.pi-hole.net
+sudo bash basic-install.sh
+
+When Prompted Set Static IP Address and Gateway
+
+Yes To Everything Else
+
+Upon Completeion it will display configured Information including the randomly generated Password. Write It Down.
+
+sudo reboot
+
+* Updating
+
+pihole -up
+
+* Admin Dashboard
+
+There are several ways to access the dashboard:
+
+    http://pi.hole/admin/ (when using Pi-hole as your DNS server)
+    http://<IP_ADDPRESS_OF_YOUR_PI_HOLE>/admin/
+    http://pi.hole/ (when using Pi-hole as your DNS server)
+
+* Test if your PiHole is Working
+
+https://blockads.fivefilters.org/?pihole
+
+----------------------------------
+PiTFT Install
+----------------------------------
+
+Installer script
+
+This script will do all the work for you, and install both device tree overlay support as well as configure rotation and any HDMI mirroring. PiTFT no longer needs any custom kernels or modules, so you can continue to update/upgrade your Pi and it will work with the most recent releases.
+
+Here's the commands to run. Make sure your Pi has network access, it needs to download the software!
+Download: file
+Copy Code
+
+    cd ~
+    wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/adafruit-pitft.sh
+    chmod +x adafruit-pitft.sh
+    sudo ./adafruit-pitft.sh
+
+For the 2.4", 2.8" and 3.2" PiTFT with resistive touchscreen overlay select #1
+
+Rotation = 270 (Buttons On The Left)
+
+Display Console on TFT = Y
+
+Reboot = Y
+
+----------------------------------
+PADD Install
+----------------------------------
+
+https://learn.adafruit.com/pi-hole-ad-pitft-tft-detection-display/install-padd
+
+
+
+Next we're going to install PADD, the Pi-hole Ad Detection Display. This application displays statistics about advertisements, your Pi's status, network configuration and system statistics on your PiTFT.
+
+It is written and maintained by Jim McKenna who did an awesome job!
+
+In the SSH session with your Pi, navigate to your home directory:
+
+    cd ~
+
+Grab a copy of PADD:
+
+    wget -N https://raw.githubusercontent.com/jpmck/PADD/master/padd.sh
+
+Make PADD executable by running:
+
+    sudo chmod +x padd.sh
+
+
+* Open PADD at Pi Bootup
+
+Next, we're going to set PADD to open automatically on your PiTFT when we start our Pi.
+
+    nano ~/.bashrc
+
+Navigate to the end of the file (by pressing the down arrow key) and add the following text:
+
+    # Run PADD
+    # If we're on the PiTFT screen (ssh is xterm)
+    if [ "$TERM" == "linux" ] ; then
+      while :
+      do
+        ./padd.sh
+        sleep 1
+      done
+    fi
+
+Save (control+O) the configuration and exit (control+X) nano to be brought back to the terminal.
+
+
+    Prevent the display from going to sleep by adding consoleblank=0 to the end of /boot/cmdline.txt.
+
+    Configure the console by running:
+
+sudo dpkg-reconfigure console-setup
+
+Encoding: UTF-8
+Character set: Guess optimal character set
+Font for the connsole: Terminus
+Font Size: 6x12
+
+
+*** Optional - Turn off the PiTFT at Night
+
+The PiTFT is bright and doesn't need to be powered-on at night, so let's put it to sleep until we wake up.
+
+Edit cron as root:
+Download: file
+Copy Code
+
+    sudo crontab -e
+
+Select nano as an editor by pressing the 2 key.
+
+Scroll beneath the commented text (#) and enter the following:
+Download: file
+Copy Code
+
+    # PADD Sleep
+    # Turn off the PiTFT+ at midnight
+    00 00 * * * sh -c 'echo "0" > /sys/class/backlight/soc\:backlight/brightness'
+    # Turn on the PiTFT+ at 8:00 am
+    00 08 * * * sh -c 'echo "1" > /sys/class/backlight/soc\:backlight/brightness'
+
+Save (control+O) the configuration and exit (control+X) nano to be brought back to the terminal.
+
+Reboot the Pi to apply the new changes by running:
+
+sudo reboot
+
+
+
+* Updating PADD
+
+If your PADD displays Update avail., you'll need to update it. PADD only uses stable builds of Pi-hole and FTLDNS, so you can rest assured that your internet won't break.
+
+We can do this easily by SSH'ing into our Pi-Hole:
+Download: file
+Copy Code
+
+    ssh pi@pi-hole.local
+
+Log in. Then, navigate to our home directory:
+Download: file
+Copy Code
+
+    cd ~
+
+And update the version of PADD on your Pi by running:
+Download: file
+Copy Code
+
+    wget -N https://raw.githubusercontent.com/jpmck/PADD/master/padd.sh
+
+After the update completes, restart your Pi by running:
+Download: file
+Copy Code
+
+    sudo reboot
+
+Once restarted, PADD should display "Pi-hole is up-to-date".
+
+----------------------------------
+Unbound Install
+----------------------------------
+
+Setting up Pi-hole as a recursive DNS server solution
+
+We will use unbound, a secure open-source recursive DNS server primarily developed by NLnet Labs, VeriSign Inc., Nominet, and Kirei. The first thing you need to do is to install the recursive DNS resolver:
+
+	sudo apt install unbound
+
+Download the current root hints file (the list of primary root servers which are serving the domain "." - the root domain). Update it roughly every six months. Note that this file changes infrequently. This is only necessary if you are not installing unbound from a package manager. If you do this optional step, you will need to uncomment the root-hints: configuration line in the suggested config file.
+
+	wget -O root.hints https://www.internic.net/domain/named.root
+	sudo mv root.hints /var/lib/unbound/
+
+Configure unbound
+
+Highlights:
+
+    Listen only for queries from the local Pi-hole installation (on port 5335)
+    Listen for both UDP and TCP requests
+    Verify DNSSEC signatures, discarding BOGUS domains
+    Apply a few security and privacy tricks
+
+	sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf:
+
+server:
+    # If no logfile is specified, syslog is used
+    # logfile: "/var/log/unbound/unbound.log"
+    verbosity: 0
+
+    interface: 127.0.0.1
+    port: 5335
+    do-ip4: yes
+    do-udp: yes
+    do-tcp: yes
+
+    # May be set to yes if you have IPv6 connectivity
+    do-ip6: no
+
+    # You want to leave this to no unless you have *native* IPv6. With 6to4 and
+    # Terredo tunnels your web browser should favor IPv4 for the same reasons
+    prefer-ip6: no
+
+    # Use this only when you downloaded the list of primary root servers!
+    # If you use the default dns-root-data package, unbound will find it automatically
+    #root-hints: "/var/lib/unbound/root.hints"
+
+    # Trust glue only if it is within the server's authority
+    harden-glue: yes
+
+    # Require DNSSEC data for trust-anchored zones, if such data is absent, the zone becomes BOGUS
+    harden-dnssec-stripped: yes
+
+    # Don't use Capitalization randomization as it known to cause DNSSEC issues sometimes
+    # see https://discourse.pi-hole.net/t/unbound-stubby-or-dnscrypt-proxy/9378 for further details
+    use-caps-for-id: no
+
+    # Reduce EDNS reassembly buffer size.
+    # Suggested by the unbound man page to reduce fragmentation reassembly problems
+    edns-buffer-size: 1472
+
+    # Perform prefetching of close to expired message cache entries
+    # This only applies to domains that have been frequently queried
+    prefetch: yes
+
+    # One thread should be sufficient, can be increased on beefy machines. In reality for most users running on small networks or on a single machine, it should be unnecessary to seek performance enhancement by increasing num-threads above 1.
+    num-threads: 1
+
+    # Ensure kernel buffer is large enough to not lose messages in traffic spikes
+    so-rcvbuf: 1m
+
+    # Ensure privacy of local IP ranges
+    private-address: 192.168.0.0/16
+    private-address: 169.254.0.0/16
+    private-address: 172.16.0.0/12
+    private-address: 10.0.0.0/8
+    private-address: fd00::/8
+    private-address: fe80::/10
+
+Start your local recursive server and test that it's operational:
+
+	sudo service unbound restart
+	dig pi-hole.net @127.0.0.1 -p 5335
+
+The first query may be quite slow, but subsequent queries, also to other domains under the same TLD, should be fairly quick.
+Test validation
+
+You can test DNSSEC validation using
+
+	dig sigfail.verteiltesysteme.net @127.0.0.1 -p 5335
+	dig sigok.verteiltesysteme.net @127.0.0.1 -p 5335
+
+The first command should give a status report of SERVFAIL and no IP address. The second should give NOERROR plus an IP address.
+Configure Pi-hole
+
+Finally, configure Pi-hole to use your recursive DNS server by specifying 127.0.0.1#5335 as the Custom DNS (IPv4)
+
+
+*** Reset FTL Stats
+
+sudo su
+
+cd /etc/pihole
+sudo service pihole-FTL stop
+sudo mv pihole-FTL.db pihole-FTL.db.old
+sudo service pihole-FTL start
+
+*** QoL
+
+if you get to block list happy you can use:
+
+sudo rm /etc/pihole/adlists.list
+
+then
+
+sudo pihole -g
+
+sudo reboot
+
+This will reset your Pi-hole back to the default list
+
+
+----------------------------------
+Updates (Every 6 Months Or So)
+----------------------------------
+
+	apt-get update (Updates Raspbian, Pihole, Unbound Etc.)
+
+	wget -O root.hints https://www.internic.net/domain/named.root
+	sudo mv root.hints /var/lib/unbound/
+
+----------------------------------
+09.03.2020 - Versions
+
+Raspbian GNU/Linux 10 (buster)
+Linux RasPiHole 5.4.51-v7+
+
+Pi-hole:	v5.1.2.
+Web:		v5.1.1.
+FTL: 		v5.2
+PADD:		v3.3.1
+
+----------------------------------
+
+
+
+
+
+
+
+
+
+
+		
