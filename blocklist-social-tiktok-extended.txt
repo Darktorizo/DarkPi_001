@@ -1,3 +1,6 @@
+# Extended TikTok Blocklist
+# Compiled from various sources
+
 0.0.0.0 0pbxmo.xzcs3zlph.com
 0.0.0.0 0pbxmo-useast2a.xzcs3zlph.com
 0.0.0.0 189.cn
@@ -1002,23 +1005,3 @@
 0.0.0.0 zttvp.v.bsgslb.com
 0.0.0.0 zttvq.v.bsgslb.com
 0.0.0.0 zttvs.v.bsgslb.com
-
-# ===============================================================
-
-(^|\.)muscdn\.com$
-
-(^|\.)musical\.ly$
-
-(^|\.)tiktok\.com$
-
-(^|\.)tiktok\.org$
-
-(^|\.)tiktokcdn\.com$
-
-(^|\.)musemuse\.cn$
-
-(^|\.)ibytedtos\.com$
-
-(^|\.)byteoversea\.com$
-
-(^|\.)hypstarcdn\.com$
