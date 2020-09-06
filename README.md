@@ -5,6 +5,14 @@ RasPiHole Blocklists for my network.
 
 ---
 
+My personal installation guide:
+
+https://raw.githubusercontent.com/Darktorizo/DarkPi_001/master/Raspi.TFT.PiHole.PADD.unbound%20Install.txt
+
+*Note: Compiled from various sources
+
+---
+
 ## Default PiHole Lists:
 
 ##StevenBlack's list
