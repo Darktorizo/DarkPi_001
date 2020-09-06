@@ -32,6 +32,7 @@
 0.0.0.0 abtest-va.byteoversea.com
 0.0.0.0 abtest-va-tiktok.byteoversea.com
 0.0.0.0 abtest-va-tiktok.byteoversea.com.edgesuite.net
+0.0.0.0 activity.tiktok.com
 0.0.0.0 ad-lb-alisg.byteoversea.net
 0.0.0.0 ad-lb-maliva.byteoversea.net
 0.0.0.0 ads.tiktok.com
@@ -230,6 +231,7 @@
 0.0.0.0 bds-sg.byteoversea.com
 0.0.0.0 bgp.misc-core-lb-lf.l.bytedns.net
 0.0.0.0 boe-verify.snssdk.com
+0.0.0.0 business.tiktok.com
 0.0.0.0 business.topbuzz.com
 0.0.0.0 business-sg.topbuzz.com
 0.0.0.0 bytedance.map.fastly.net
@@ -238,6 +240,7 @@
 0.0.0.0 c.pstatp.com
 0.0.0.0 c.pstatp.com.w.cdngslb.com
 0.0.0.0 c01.i07.arnic.lv3.cloudglb.com
+0.0.0.0 careers.tiktok.com
 0.0.0.0 castmsc1.xzcs3zlph.com
 0.0.0.0 casttt1.xzcs3zlph.com
 0.0.0.0 cdn.isnssdk.com
@@ -266,6 +269,7 @@
 0.0.0.0 developer-sg.byteoversea.com
 0.0.0.0 developer-sg.byteoversea.com.edgesuite.net
 0.0.0.0 dm.bytedance.com
+0.0.0.0 dm.bytedance.com 
 0.0.0.0 dm.bytedance.com.w.cdngslb.com
 0.0.0.0 dm.bytedance.net
 0.0.0.0 dm.byteoversea.com
@@ -324,6 +328,7 @@
 0.0.0.0 gecko-va.tiktokv.com.edgesuite.net
 0.0.0.0 gecko-va-useast1a.musical.ly
 0.0.0.0 gecko-va-useast2a.musical.ly
+0.0.0.0 getstarted.tiktok.com
 0.0.0.0 gs-sin-api1.l.byteoversea.net
 0.0.0.0 h1.bytedance.map.fastly.net
 0.0.0.0 hls-l11.tiktokcdn.liveplay.myqcloud.com
@@ -340,6 +345,7 @@
 0.0.0.0 i16-tb.isnssdk.com.edgekey.net
 0.0.0.0 ib.snssdk.com
 0.0.0.0 ib.tiktokv.com
+0.0.0.0 ibytedtos.com 
 0.0.0.0 ichannel.isnssdk.com
 0.0.0.0 ichannel.musical.ly
 0.0.0.0 ichannel-tb.isnssdk.com
@@ -421,6 +427,7 @@
 0.0.0.0 maliva-normal-lb.byteoversea.net
 0.0.0.0 mcs.snssdk.com
 0.0.0.0 mon.byteoversea.com
+0.0.0.0 mon.byteoversea.com 
 0.0.0.0 mon.byteoversea.com.edgesuite.net
 0.0.0.0 mon.isnssdk.com
 0.0.0.0 mon.musical.ly
@@ -431,6 +438,7 @@
 0.0.0.0 mon.tiktokv.com.edgesuite.net
 0.0.0.0 monitor.isnssdk.com
 0.0.0.0 mon-va.byteoversea.com
+0.0.0.0 mon-va.byteoversea.com 
 0.0.0.0 mon-va.byteoversea.com.edgesuite.net
 0.0.0.0 mon-va.tiktokv.com
 0.0.0.0 mon-va.tiktokv.com.edgesuite.net
@@ -444,8 +452,10 @@
 0.0.0.0 mpaw-suse1.muscdn.com
 0.0.0.0 mphw-suse1.muscdn.com
 0.0.0.0 mphw-suse1.muscdn.com.akamaized.net
+0.0.0.0 muscdn.com 
 0.0.0.0 musical.ly
 0.0.0.0 musically.app.link
+0.0.0.0 musically.ly
 0.0.0.0 musically-alternate.app.link
 0.0.0.0 m-v16.akamaized.net
 0.0.0.0 mva.byteoversea.com
@@ -454,6 +464,7 @@
 0.0.0.0 mvaali1.ws.byteoversea.net
 0.0.0.0 mvaali2.l.byteoversea.net
 0.0.0.0 mzfvozqybf.com
+0.0.0.0 newsroom.tiktok.com
 0.0.0.0 notifyback-va.isnssdk.com
 0.0.0.0 notifyback-va.isnssdk.com.edgekey.net
 0.0.0.0 nqzeqb.xzcs3zlph.com
@@ -573,8 +584,10 @@
 0.0.0.0 pull-hls-l1.tiktokcdn.com.wsdvs.com
 0.0.0.0 pull-hls-l11.tiktokcdn.com
 0.0.0.0 pull-rtmp-l1.tiktokcdn.com
+0.0.0.0 pull-rtmp-l1.tiktokcdn.com 
 0.0.0.0 pull-rtmp-l1.tiktokcdn.com.wsdvs.com
 0.0.0.0 pull-rtmp-l11.tiktokcdn.com
+0.0.0.0 pull-rtmp-l11.tiktokcdn.com 
 0.0.0.0 pvbmgpkp.xzcs3zlph.com
 0.0.0.0 qfyf1toi.com
 0.0.0.0 quic-awsbr.byteoversea.com
@@ -691,6 +704,7 @@
 0.0.0.0 sf6-ttcdn-tos.pstatp.com.download.ks-cdn.com
 0.0.0.0 sf-hs-sg.ibytedtos.com
 0.0.0.0 sf-tb-sg.ibytedtos.com
+0.0.0.0 sf-tb-sg.ibytedtos.com 
 0.0.0.0 sf-tb-sg.ibytedtos.com.edgesuite.net
 0.0.0.0 sf-tk-sg.ibytedtos.com
 0.0.0.0 sf-tk-sg.ibytedtos.com.edgekey.net
@@ -698,6 +712,7 @@
 0.0.0.0 sg3.byteoversea.com
 0.0.0.0 sgali1.ws.byteoversea.net
 0.0.0.0 sgali3.l.byteoversea.net
+0.0.0.0 sgali3.l.byteoversea.net 
 0.0.0.0 sgali-dpprofile.byteoversea.com
 0.0.0.0 sgali-mcs.byteoversea.com
 0.0.0.0 sgali-mcs.byteoversea.com.edgesuite.net
@@ -718,6 +733,7 @@
 0.0.0.0 starling-sg.byteoversea.com.edgesuite.net
 0.0.0.0 starling-va.byteoversea.com
 0.0.0.0 starling-va.byteoversea.com.edgesuite.net
+0.0.0.0 support.tiktok.com
 0.0.0.0 sv10.byteoversea.com
 0.0.0.0 t.tiktok.com
 0.0.0.0 t.tiktok.com.edgesuite.net
@@ -728,6 +744,8 @@
 0.0.0.0 third-api.amemv.com
 0.0.0.0 tiktok.com
 0.0.0.0 tiktok.org
+0.0.0.0 tiktokcdn.com
+0.0.0.0 tiktokcdn-com.akamaized.net 
 0.0.0.0 tiktok-lb-alisg.byteoversea.net
 0.0.0.0 tiktok-lb-maliva.byteoversea.net
 0.0.0.0 tiktokv.com
@@ -785,6 +803,7 @@
 0.0.0.0 v16.tiktokcdn.com.edgesuite.net
 0.0.0.0 v16.tiktokv.com
 0.0.0.0 v16.xzcs3zlph.com
+0.0.0.0 v16a.tiktokcdn.com
 0.0.0.0 v16-ad.byteoversea.com
 0.0.0.0 v16-dy.byteoversea.com
 0.0.0.0 v16m.byteicdn.com
@@ -950,6 +969,7 @@
 0.0.0.0 webcast-useast1a.musical.ly
 0.0.0.0 webcast-useast1a.musical.ly.edgekey.net
 0.0.0.0 webcast-useast2a.musical.ly
+0.0.0.0 webcast-useast2a.musical.ly 
 0.0.0.0 webcast-useast2a.musical.ly.edgekey.net
 0.0.0.0 webcast-va.tiktokv.com
 0.0.0.0 wj.byteoversea.com
@@ -982,3 +1002,23 @@
 0.0.0.0 zttvp.v.bsgslb.com
 0.0.0.0 zttvq.v.bsgslb.com
 0.0.0.0 zttvs.v.bsgslb.com
+
+# ===============================================================
+
+(^|\.)muscdn\.com$
+
+(^|\.)musical\.ly$
+
+(^|\.)tiktok\.com$
+
+(^|\.)tiktok\.org$
+
+(^|\.)tiktokcdn\.com$
+
+(^|\.)musemuse\.cn$
+
+(^|\.)ibytedtos\.com$
+
+(^|\.)byteoversea\.com$
+
+(^|\.)hypstarcdn\.com$
