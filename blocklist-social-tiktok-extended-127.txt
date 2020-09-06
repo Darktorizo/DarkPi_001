@@ -1,3 +1,10 @@
+# Blocklist for TikTok (And Related Doamins) #
+# Version: 1.0
+# Last Modified: 09.06.2020 @ 10:00am EST
+# Homepage: https://raw.githubusercontent.com/Darktorizo/DarkPi_001/master/blocklist-social-tiktok-extended-127.txt
+# The list is released without any warranty to the end users.
+# License: GPLv3
+#------------------------------------------------------------------------------------------------------------------#
 127.0.0.1 0pbxmo.xzcs3zlph.com
 127.0.0.1 0pbxmo-useast2a.xzcs3zlph.com
 127.0.0.1 189.cn
