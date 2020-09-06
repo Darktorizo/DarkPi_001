@@ -40,9 +40,9 @@ Also, if I used your list and forgot to mention you, please contact me and I wil
 
 ---
 
-Found a false positive, but don't know which list contains it?
+## Found a false positive, but don't know which list contains it?
 
-Run pihole -q blockeddomain.com, and it will return the URL of the block list.
+Run `pihole -q blockeddomain.com`, and it will return the URL of the block list.
 
 ---
 
