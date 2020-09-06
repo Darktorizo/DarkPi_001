@@ -4,7 +4,7 @@
 # Domains Listed: 993 (1004 actual)
 # Homepage: https://raw.githubusercontent.com/Darktorizo/DarkPi_001/master/blocklist-social-tiktok-extended-127.txt
 # The list is released without any warranty to the end users.
-# License: GPLv3
+# License: MIT License
 #------------------------------------------------------------------------------------------------------------------#
 127.0.0.1 0pbxmo.xzcs3zlph.com
 127.0.0.1 0pbxmo-useast2a.xzcs3zlph.com
