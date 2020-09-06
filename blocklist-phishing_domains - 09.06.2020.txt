@@ -2923,7 +2923,7 @@ iplogger.org
 iqbalmela.com
 iqmsqvakcxrjkaywkkwfdmjhkp-dot-gleowayel400503.uc.r.appspot.com
 irancementex.com
-irbis.pushkinlibrary.kz:8087
+irbis.pushkinlibrary.kz
 ir-bri.in
 irenterprises.in
 irezor.com
@@ -3698,7 +3698,7 @@ mcb-et.xyz
 mcdonalds.prepaidaccess.com
 mcdonoghtea.000webhostapp.com
 mchub.org.uk
-mcsquareintl.com:32000
+mcsquareintl.com
 mdeaankrdtpxeiuzmjmwidisnu-dot-gleowayel400503.uc.r.appspot.com
 mdevents.in
 mdgopbpyqwqrlnmaoxknhsotwj-dot-gleowayel400503.uc.r.appspot.com
@@ -6353,7 +6353,7 @@ web.editey.com
 web1.customer-acc-support.com
 web1577.webbox444.server-home.org
 web-24-7.myshopify.com
-web2-bb-com-br.duckdns.org:5000
+web2-bb-com-br.duckdns.org
 web-app.at.ua
 webapp-project.com
 webbbb.yolasite.com
@@ -7694,7 +7694,6 @@ xmley.codesandbox.io
 xmz.sushmagp.com
 xn.yychd.com
 xn--3-vc2br1kyq5b.com
-xn--3-vc2br1kyq5b.com:82
 xn--80aaa0a0avl4b6b.xn--p1ai
 xn--80al0adb1gd.xn--p1ai
 xn--b1amvejg.com
