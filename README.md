@@ -33,5 +33,9 @@ Also, if I used your list and forgot to mention you, please contact me and I wil
 ---
 
 ##### Credits:
-- *WaLLy3K* over at https://firebog.net for the first and second lists.
+- StevenBlack
+- MalwareDomains
+- Cameleon
+- Disconnect.me
+- *WaLLy3K* over at https://firebog.net
 - All the good people at https://blocklist.site/app
