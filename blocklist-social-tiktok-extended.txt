@@ -1,6 +1,6 @@
 # Extended TikTok Blocklist
 # Compiled from various sources
-
+#
 0.0.0.0 0pbxmo.xzcs3zlph.com
 0.0.0.0 0pbxmo-useast2a.xzcs3zlph.com
 0.0.0.0 189.cn
