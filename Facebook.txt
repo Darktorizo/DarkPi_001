@@ -1,17 +1,10 @@
 
 #------------------------------------[UPDATE]--------------------------------------
-# Title: The Block List Project
-# Expires: 1 day
-# Homepage: https://blocklist.site
-# Help: https://github.com/blocklistproject/lists/wiki/
-# License: https://unlicense.org
 # Total number of network filters: 181664
+# 12.8.2020
 #------------------------------------[SUPPORT]-------------------------------------
-# You can support by:
-#  - reporting false positives
-#  - making a donation: https://paypal.me/blocklistproject
+# 
 #-------------------------------------[INFO]---------------------------------------
-#
 # Facebook list
 #------------------------------------[FILTERS]-------------------------------------
 0.0.0.0 0-edge-chat.facebook.com
