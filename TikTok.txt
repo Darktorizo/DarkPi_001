@@ -1,5 +1,5 @@
 #------------------------------------[UPDATE]--------------------------------------
-# 12.8.2020
+# 
 #------------------------------------[SUPPORT]-------------------------------------
 # 
 #-------------------------------------[INFO]---------------------------------------
@@ -34,13 +34,49 @@ s16.tiktokcdn.com
 # ===============================================================
 
 (^|\.)muscdn\.com$
-
 (^|\.)musical\.ly$
-
 (^|\.)tiktok\.com$
-
 (^|\.)tiktok\.org$
-
 (^|\.)tiktokcdn\.com$
+
+(\.|^)www\.tiktok\.com$
+
+(\.|^)bytecdn\.cn$
+(\.|^)bytedance\.com$
+(\.|^)bytedance\.net$
+(\.|^)bytedns\.net$
+(\.|^)byteicdn\.com$
+(\.|^)byteimg\.com$
+(\.|^)byteoversea\.com$
+(\.|^)byteoversea\.net$
+(\.|^)bytetcdn\.com$
+(\.|^)hypstarcdn\.com$
+(\.|^)ibytedtos\.com$
+(\.|^)ibyteimg\.com$
+(\.|^)ipstatp\.com$
+(\.|^)isnssdk\.com$
+(\.|^)muscdn\.com$
+(\.|^)musemuse\.cn$
+(\.|^)pstatp\.com$
+(\.|^)sgpstatp\.com$
+(\.|^)sgsnssdk\.com$
+(\.|^)snssdk\.com$
+(\.|^)tiktokcdn\.com$
+(\.|^)tiktokv\.com$
+(\.|^)toutiao\.com$
+(\.|^)worldfcdn\.com$
+(\.|^)wsdvs\.com$
+
+
+
+
+
+
+
+
+
+
+
+
 
 

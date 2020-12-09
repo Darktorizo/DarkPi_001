@@ -3,7 +3,7 @@
 #------------------------------------[SUPPORT]-------------------------------------
 # 
 #-------------------------------------[INFO]---------------------------------------
-# Facebook list
+# Facebook / WhatsApp / Instagram list
 #------------------------------------[FILTERS]-------------------------------------
 0-edge-chat.facebook.com
 0.beta.facebook.com
@@ -2104,3 +2104,9 @@ zh-cn.facebook.com
 zh-hk.facebook.com
 zh-tw.facebook.com
 zh-tw.facebook.com0.facebook.com
+
+# ===============================================================
+
+(^|\.)instagram\.com$
+(^|\.)www\.instagram\.com$
+(^|\.)cdninstagram\.com$
